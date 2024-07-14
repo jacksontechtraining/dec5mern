@@ -3,14 +3,14 @@ pipeline{
     stages{
         stage('checking node availability'){
             steps{
-                bat `node --version`
+                bat 'node --version'
             }
         }
     }
     stages{
         stage('checking npm availability'){
             steps{
-                bat `npm --version`
+                bat 'npm --version'
             }
         }
     }
@@ -24,21 +24,21 @@ pipeline{
     stages{
         stage('installing dependencies'){
             steps{
-                bat `npm i`
+                bat 'npm i'
             }
         }
     }
     stages{
         stage('running test case'){
             steps{
-                bat `npm i`
+                bat 'npm i'
             }
         }
     }
     stages{
         stage('clean build'){
             steps{
-                bat `del node_modules`
+                bat 'del node_modules'
             }
         }
     }
