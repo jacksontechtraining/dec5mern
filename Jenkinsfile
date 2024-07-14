@@ -32,7 +32,7 @@ pipeline{
    
         stage('running test case'){
             steps{
-                bat 'npm i'
+                bat 'npm test'
             }
         }
     
